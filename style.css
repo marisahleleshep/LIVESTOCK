@@ -1,0 +1,196 @@
+.many{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.cont{
+    background-color: blue;
+     padding-left: 800px;
+     display: flex;
+     justify-content: space-between;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    
+}
+#wel{
+    margin-top: -50px;
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+}
+.you{
+    margin-left: 500px;
+}
+#lop{
+    width: 200px;
+    height: 50px;
+    background-color: blue;
+    border: blue solid;
+    border-radius: 5px;
+    font-size: 21px;
+    margin-left: 500px;
+    margin-bottom: -100px;
+}
+.pop a {
+    text-decoration: none;
+}
+
+.pop{
+    margin-top: -50px;
+    font-size: 35px;
+    animation: slideRight 1s ease forwards;
+    animation-delay: 2s;  
+}
+
+.none{
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    color: white;
+    height: 60px;
+}
+
+ .none {
+    display: block;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5em;
+    color: white;
+    height: 60px;
+    position: relative;
+}
+
+.none::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #fff, transparent, #fff);
+    opacity: 0;
+    animation: shine 1s linear infinite;
+    z-index: 1;
+}
+
+@keyframes shine {
+    0% {
+        transform: translateX(-200%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateX(200%);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(200%);
+        opacity: 0;
+    } 
+} 
+.none a{
+    text-decoration: none;
+}
+ #co{
+    height: 5px;
+    background-color: darkblue;
+    margin-top: -20px;
+ }
+
+ #but {
+    font-size: 25px;
+    color: blue;
+    margin-left: 45vh;
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    animation-delay: 2s;
+}
+
+ @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+} 
+ #lp{
+    margin-left: 550px;
+    color: blue;
+    font-size: 30px;
+ }
+.content{
+    margin-left: 60vh;
+    color: blue;
+   font-size: 1.1em;
+}
+
+.cow img {
+    width: 750px;
+    border: black solid;
+    border-radius: 10px;
+    margin-left: 100vh;
+    margin-top: -85vh;
+    margin-bottom: 12px;
+    height: 580px;
+    animation: slideInCow 2s ease forwards;
+}
+
+.imge img {
+    width: 750px;
+    height: 550px;
+    border: black solid;
+    border-radius: 10px;
+    animation: slideInImge 2s ease forwards, fadeOutImge 2s 2s ease forwards;
+    margin-left: 9vh;
+}
+
+.goat img {
+    width: 650px;
+    border: black solid;
+    border-radius: 10px;
+    margin-left: 184vh;
+    margin-top: -95vh;
+    margin-bottom: 30px;
+    height: 580px;
+    animation: slideInGoat 2s ease forwards;
+}
+
+@keyframes slideInCow {
+    0% {
+        margin-right: 100vh;
+    }
+    100% {
+        margin-right: 9vh;
+    }
+}
+
+@keyframes slideInImge {
+    0% {
+        opacity: 0;
+        transform: translateX(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeOutImge {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes slideInGoat {
+    0% {
+        margin-right: 184vh;
+    }
+    100% {
+        margin-left: 9vh;
+    }
+}
